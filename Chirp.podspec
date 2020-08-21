@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Chirp"
-  s.version          = "1.2.0"
+  s.version          = "1.3.0"
   s.summary          = "The easiest way to prepare, play, and remove sounds in your Swift app!"
 
 # This description is used to generate tags and improve search results.
@@ -20,14 +20,16 @@ Pod::Spec.new do |s|
                        Bored of manually managing SystemSoundIDs?  Chirp gives you a quick and easy way to prepare, play, and remove sounds in your app!  Each of those only taking 1 line of code.
                        DESC
 
-  s.homepage         = "https://github.com/trifl/Chirp"
+  s.homepage         = "https://github.com/prismscroll/Chirp"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "JP McGlone" => "jp@trifl.co" }
   s.source           = { :git => "https://github.com/trifl/Chirp.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '8.0'
+  # s.platform     = :ios, '8.0'
+  s.ios.deployment_target = '8.0'
+  s.tvos.deployment_target = '9.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
